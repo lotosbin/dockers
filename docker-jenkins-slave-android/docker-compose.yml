@@ -1,0 +1,8 @@
+version: '2'
+services:
+  slave:
+    build: .
+    ports:
+      - "8003:22"
+    nvironment:
+      - JENKINS_SLAVE_SSH_PUBKEY=[you ssh publickey]
